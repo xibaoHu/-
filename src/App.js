@@ -7,6 +7,8 @@ import Preferential from './components/Preferential';
 import Find from './components/Find';
 import Accouter from './components/Accouter';
 import More from './components/More';
+import Login from './components/Login';
+import Register from './components/Register';
 import Detail from './components/Detail';
 
 import {
@@ -18,7 +20,9 @@ import {
 
 const App = () => (
   <Router>
-    <div id='app'>
+  	<div id='app'>
+    	<Route path="/login" component={Login}/>
+	  	<Route path="/register" component={Register}/>
       <div className='home'>
 	      <Route exact path="/" component={Home}/>
 	      <Route path="/preferential" component={Preferential}/>

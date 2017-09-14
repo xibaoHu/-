@@ -1,0 +1,110 @@
+.more{
+	background-color: #F7F7F7;
+}
+
+.mainBox {
+	width: 100%;
+	padding-bottom: 0.5rem;
+	background-color: #F7F7F7;
+}
+
+/**********banner_block********************/
+.mainBox .banner_block{
+	width: 100%;
+	height: 1.5rem;
+	background: url(//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/bg_912a95a.png) top no-repeat;
+	background-size: 100% auto;
+}
+
+.mainBox .banner_block .userface{
+	float: left;
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-left: 0.25rem;
+	margin-top: 0.7rem;
+}
+
+.mainBox .banner_block .userface img{
+	width: 100%;
+	height: 100%;
+}
+
+.mainBox .banner_block .login{
+	float: left;
+	width: 2rem;
+	height: 0.45rem;
+	padding-left: 0.25rem;
+	margin-top: 0.7rem;
+}
+
+.mainBox .banner_block .login a{
+	color: white;
+	font-size: 0.16rem;
+	margin-right: 0.1rem;
+	line-height: -0.1rem;
+}
+
+.mainBox .banner_block .login p{
+	color: white;
+	font-size: 0.12rem;
+	margin-top: 0.01rem;
+}
+
+/*************menu_list********************/
+.mainBox .menu_list{
+	width: 100%;
+	height: 0.945rem;
+	padding: 0.075rem;
+	margin-bottom: 0.1rem;
+	background-color: #fff;
+}
+
+.mainBox .menu_list .tit{
+	width: 100%;
+	height: 0.21rem;
+	font-size: 0.14rem;
+	color: #333;
+    background: url(//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/user/border_88b19b4.png) left center repeat-x;
+    background-size: .03rem
+}
+
+.mainBox .menu_list ul{
+	width: 100%;
+	height: 0.685rem;
+	display: flex;
+	align-items: center;
+}
+
+.mainBox .menu_list ul li{
+	width: 25%;
+	height: auto;
+    text-align: center;
+    color: #333;
+    font-size: 0.12rem;
+    margin: .13rem 0;
+    position: relative;
+}
+
+.mainBox .menu_list ul li a{
+	display: block;
+    color: #444;
+    width: 100%;
+    height: 0.53rem;
+}
+
+.mainBox .menu_list ul li a img{
+    width: 0.45rem;
+    height: 0.3rem;
+    margin: 0 auto;
+}
+
+.mainBox .menu_list ul li a p{
+    width: 100%;
+    height: 0.18rem;
+}
+
+
+/*************menu_list-first***************/
+.mainBox .menu_list:nth-child(1){
+}
+
