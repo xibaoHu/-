@@ -18,8 +18,7 @@ import {
 
 const App = () => (
   <Router>
-    <div id='app'>
-      <div className='home'>
+    <div id='app'> 
 	      <Route exact path="/" component={Home}/>
 	      <Route path="/preferential" component={Preferential}/>
 	      <Route path="/find" component={Find}/>
@@ -27,7 +26,7 @@ const App = () => (
 	      <Route path="/more" component={More}/>
 	      <Route path="/detail/:id" component={Detail}/>
 	      
-	      <hr/>
+
 	      
 	      <div className='page-menu'>
 		      <ul>
@@ -38,9 +37,9 @@ const App = () => (
 		        <li><Link to="/more">更多</Link></li>
 		      </ul>
 		    </div>
-    	</div>
     </div>
   </Router>
 )
+
 
 export default App;
