@@ -16,7 +16,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-
+import './iconfont/iconfont.css'
 
 const App = () => (
   <Router>

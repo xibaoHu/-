@@ -5,5 +5,129 @@
 	height: 100%;
 	z-index: 100;
 	background-color: white;
+	position: absolute;
+	top: -9px;
 }
 
+#app .user-login #js-wrapper{
+	width: 100%;
+	height: 0.4rem;
+}
+
+#app .user-login header {
+	width: 100%;
+	height: 0.4rem;
+	background-color: #ACACB4;
+	text-align: center;
+}
+
+#app .user-login header a{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+
+#app .user-login header a span{
+	width: 0.15rem;
+	height: 0.15rem;
+	display: inline-block;
+    margin-top: .1rem;
+    border-left: 1px solid #ca0000;
+    border-top: 1px solid #ca0000;
+    text-indent: -999em;
+    overflow: hidden;
+    transform: rotate(-45deg);
+}
+
+#app .user-login header img{
+	display: block;
+    width: 0.83rem;
+    height: 0.2rem;
+    margin: 0.08rem auto 0;
+    position: relative;
+    top: 10px;
+}
+
+#app #J_loginForm{
+	display: block;
+	width: 100%;
+	height: 1.18rem;
+	padding: 0 .2rem;
+}
+
+#app #J_loginForm{
+	display: block;
+	width: 100%;
+	height: 2rem;
+	padding: 0 .2rem;
+}
+
+#app #J_loginForm .input-box{
+	width: 100%;
+	height: 0.6rem;
+	padding-bottom: .15rem;
+	padding-top: .15rem;
+}
+
+#app #J_loginForm .input-box i{
+	width: 10%;
+	height: 100%;
+	display: block;
+	float: left;
+	line-height: .3rem;
+}
+
+#app #J_loginForm .index-title {
+	color: red;
+	font-size: 0.16rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+
+#app #J_loginForm .input-box input{
+	width: 80%;
+	height: 100%;
+	border: 0;
+    border-bottom: 1px solid #e1e1e1;
+    display: block;
+    float: left;
+    line-height: 32px;
+    outline: none;
+    font-size: 15px;
+    color: black;
+}
+
+#app #J_loginForm .form-item-btn {
+    width: 100%;
+	height: 0.6rem;
+	padding-top: 0.2rem;
+	text-align: center;
+}
+
+#app #J_loginForm .form-item-btn a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #999;
+    border: 1px solid #b7b7b7;
+    height: 32px;
+    vertical-align: middle;
+    background-color: #fff;
+    font-size: 16px;
+    width: 80px;
+    line-height: 32px;
+    border-radius: 16px;
+}
+
+#app #J_loginForm .form-item-btn .login-btn {
+   	background-color: #d8544c;
+    color: white;
+	outline: none;
+	height: 32px;
+	font-size: 16px;
+	line-height: 32px;
+	border: 1px solid #b7b7b7;
+	width: 80px;
+	border-radius: 16px;
+}
