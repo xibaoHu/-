@@ -131,3 +131,27 @@
 	width: 80px;
 	border-radius: 16px;
 }
+
+#app .user-login .other-login {
+	width: 85%;
+	padding-top: 40px;
+}
+
+#app .user-login .other-login a{
+	width: 40%;
+	float: left;
+	color: black;
+	font-size: 0.14rem;
+	position: relative;
+	left: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+

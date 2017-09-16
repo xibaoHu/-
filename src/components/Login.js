@@ -34,7 +34,7 @@ class Login extends Component {
 								<em className="error-icon"></em>
 							</div>
 						 	<div className="form-item-btn ">
-								<a href="/#">注册</a>
+								<a href="http://localhost:3000/register">注册</a>
 								<input type="submit" value="登录" className="login-btn" />
 							</div>
 						</form>
