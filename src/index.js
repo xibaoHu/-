@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './iconfont/iconfont.css'
+
 
 import registerServiceWorker from './registerServiceWorker';
 import { createStore, combineReducers } from 'redux'

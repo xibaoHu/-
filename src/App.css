@@ -24,7 +24,9 @@
   text-align: center;
 }
 
-
+#app .page-menu li a{
+  color: black;
+}
 
 
 

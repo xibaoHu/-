@@ -16,7 +16,6 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import './iconfont/iconfont.css'
 
 const App = () => (
   <Router>
@@ -35,11 +34,26 @@ const App = () => (
 	      
 	      <div className='page-menu'>
 		      <ul>
-		        <li><Link to="/">首页</Link></li>
-		        <li><Link to="/preferential">优惠</Link></li>
-		        <li><Link to="/find">发现</Link></li>
-		        <li><Link to="/accouter">装备</Link></li>
-		        <li><Link to="/more">更多</Link></li>
+		        <li>
+		        	<i className="icon iconfont icon-shouye"></i>
+		        	<Link to="/">首页</Link>
+		        </li>
+		        <li>
+		        <i className="icon iconfont icon-youhui"></i>
+		        	<Link to="/preferential">优惠</Link>
+		        </li>
+		        <li>
+		        	<i className="icon iconfont icon-faxian"></i>
+		        	<Link to="/find">发现</Link>
+		        </li>
+		        <li>
+		        	<i className="icon iconfont icon-xiebaofushi"></i>
+		        	<Link to="/accouter">装备</Link>
+		        </li>
+		        <li>
+		        	<i className="icon iconfont icon-gengduo"></i>
+		        	<Link to="/more">更多</Link>
+		        </li>
 		      </ul>
 		    </div>
     	</div>
