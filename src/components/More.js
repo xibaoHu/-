@@ -3,6 +3,18 @@ import '../css/more.css';
 import { Link } from 'react-router-dom'
 
 class More extends Component {
+	constructor(){
+		super();
+	}
+	componentDidMount(){
+		console.log(document.getElementsByClassName('icon-shouye'))
+		document.getElementsByClassName('icon-gengduo')[0].style.color = 'blue';
+		document.getElementsByClassName('icon-gengduo')[0].nextSibling.color = 'blue';
+	}
+	componentWillUnmount(){
+		document.getElementsByClassName('icon-gengduo')[0].style.color = 'black';
+		document.getElementsByClassName('icon-gengduo')[0].nextSibling.color = 'black';
+	}
 	render() {
 		return (
 			<div className='more'>
