@@ -5,7 +5,7 @@ import { Carousel } from 'antd'
 class Tcarousel extends React.Component {	
 	render() {
 		return (
-			<Carousel autoplay>
+			<Carousel>
 			    <div><h3>
 					<div className="tc-img">
 						<img src="http://shihuo.hupucdn.com/trade/reposition/2017-09-06/a87bb2d6088fa63ef1f07b8acf4db62f.png" alt=""/>

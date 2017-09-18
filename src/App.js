@@ -10,6 +10,7 @@ import More from './components/More';
 import Login from './components/Login';
 import Register from './components/Register';
 import Detail from './components/Detail';
+import Tabbar from './components/Tabbar'
 
 import {
   BrowserRouter as Router,
@@ -32,30 +33,7 @@ const App = () => (
 	      
 	      <hr/>
 	      
-	      <div className='page-menu'>
-		      <ul>
-		        <li>
-		        	<i className="icon iconfont icon-shouye"></i>
-		        	<Link to="/">首页</Link>
-		        </li>
-		        <li>
-		        <i className="icon iconfont icon-youhui"></i>
-		        	<Link to="/preferential">优惠</Link>
-		        </li>
-		        <li>
-		        	<i className="icon iconfont icon-faxian"></i>
-		        	<Link to="/find">发现</Link>
-		        </li>
-		        <li>
-		        	<i className="icon iconfont icon-xiebaofushi"></i>
-		        	<Link to="/accouter">装备</Link>
-		        </li>
-		        <li>
-		        	<i className="icon iconfont icon-gengduo"></i>
-		        	<Link to="/more">更多</Link>
-		        </li>
-		      </ul>
-		    </div>
+	      <Tabbar/>
     	</div>
     </div>
   </Router>
