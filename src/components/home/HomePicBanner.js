@@ -83,6 +83,9 @@ class PicBanner extends Component {
 					</p>
 				</li>
 			</ul>
+			<div className="pic-board">
+				<img src="http://shihuo.hupucdn.com/appHome/201709/1816/b406bf4e7b34b1e1519ebd862b4482df.jpg" alt=""/>
+			</div>
 			</div>
 		)
 	}		    
