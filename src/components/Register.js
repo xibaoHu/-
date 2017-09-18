@@ -34,14 +34,14 @@ class Register extends Component {
 	componentDidUpdate(){
 		console.log('update')
 		console.log(this.state)
-		if( this.state.ok == '1' ){
+		if( this.state.ok === '1' ){
 			fetch("/api/regist?username="+this.state.phone+"&psw=111111").then((res)=>{
 		      	return res.json();
 		    }).then((data)=>{
 		      	console.log(data);
 //				alert(data.result);
 				( () => { 
-					if ( data.result == '该用户已注册' ) {
+					if ( data.result === '该用户已注册' ) {
 						message.warning(data.result)
 					}else {
 						message.success(data.result);

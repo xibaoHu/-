@@ -19,7 +19,7 @@ class More extends Component {
 	componentDidMount(){
 		if ( localStorage.userState ){
 			const loginState = JSON.parse(localStorage.userState);
-			if( loginState.state == 'ok' ) {
+			if( loginState.state === 'ok' ) {
 				this.setState({
 		        	ok: '1',
 		        	login: loginState.user,

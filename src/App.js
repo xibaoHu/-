@@ -14,8 +14,7 @@ import Tabbar from './components/Tabbar'
 
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 const App = () => (
