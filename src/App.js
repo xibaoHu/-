@@ -25,7 +25,6 @@ const App = () => (
 	      <Route path="/accouter" component={Accouter}/>
 	      <Route path="/more" component={More}/>
 	      <Route path="/detail/:id" component={Detail}/>
-	      
 
 	      
 	      <div className='page-menu'>

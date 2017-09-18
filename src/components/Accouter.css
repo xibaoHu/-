@@ -1,0 +1,218 @@
+.accouter{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.accouter_search{
+	 background:#F7F7F7;
+	 padding-left:0.1rem;
+	 position:relative;
+	 
+}
+.accouter_search input{
+	 background:#EAEAEA;
+	 border:none;
+     height:0.27rem;
+     margin:0.075rem 0;
+     padding-left:0.225rem;
+     width:2.7rem;
+     
+}
+.accouter_search .search{
+	position: absolute;
+	bottom:0.1rem;
+	left:0.15rem;
+}
+.accouter_search .ellipsis{
+	margin-left: 0.1rem;
+	font-size:0.24rem;
+	line-height:0.42rem;
+}
+
+.accouter_content1{
+	margin-top:0.1rem;
+	padding:0.088rem 0;
+	height:0.75rem;
+	width:100%;
+	box-sizing: border-box;
+    display:flex;	
+}
+.accouter_content1 .content1{
+	text-align:center;
+	flex:1;
+}
+.accouter_content1 .content1 img{
+	height:0.21rem;
+	width:0.19rem;	
+	margin : 0 0.44rem 0.065rem 0.43rem; 
+}
+.types_item{
+	padding-top:10px;
+	background:#F0F3F5;
+
+}
+.types_item .types_top{
+	overflow: hidden;
+	height:1.95rem;
+	width:100%;
+	position: relative;
+}
+.types_item .types_top .types_bkground{
+	width:100%;
+	height:100%;
+}
+.types_item .types_top .wraper{
+    position:absolute;
+    bottom:0;
+    left:0;
+	height:1.74rem;
+	width:100%;
+	color:#FFFFFF;
+}
+.types_item .types_top .wraper .h2{
+	width:80%;
+	margin:0 auto;
+	font-size:0.25rem;
+	text-align: center;
+}
+.types_item .types_top .wraper p{
+	overflow: hidden;
+	white-space: nowrap;
+	color:#FFFFFF;
+	margin:0 auto;
+	width:80%;
+	text-align: center;
+	font-size:0.14rem;
+}
+s{
+	text-decoration: none;
+}
+.wraper_left{
+	width:0.165rem;
+	height:1.25rem;
+	top:0.15rem;
+	left:0.05rem;
+	position:absolute;
+}
+.wraper_left img{
+	display: block;
+	height:100%;
+}
+.wraper_right{
+	position:absolute;
+	top:0.15rem;
+	right:0.05rem;
+	width:0.165rem;
+	height:1.25rem;
+}
+.wraper_right img{
+	display: block;
+	height:100%;
+	
+}
+.clearfix{
+   margin-top:0.2rem;
+	height:0.85rem;
+	width:100%;
+	display: flex;
+	margin-left:0.38rem;
+	box-sizing: border-box;
+}
+.clearfix .boxF{
+	height:0.7rem;
+	width:0.5rem;
+	overflow: hidden;
+	transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    box-sizing: border-box;
+    margin-left:0.1rem;
+}
+.clearfix .boxS{
+
+	width:0.5rem;
+	height:0.7rem;
+	box-sizing: border-box;
+	overflow: hidden;	
+     transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+
+}
+.clearfix .boxF img{
+	height:0.7rem;
+	width:0.5rem;
+    background: no-repeat center center;
+    background-size: 100%;
+    background-color: #fff;
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+}
+.types_bottom{
+	width:100%;
+	overflow: hidden;
+}
+.types_bottom .type_ranges {
+	width:25%;
+	background:#FFFFFF;
+	float: left;
+	box-sizing: border-box;
+	padding:0.12rem 0 ;	
+	text-align: center;
+	font-size:0.08rem;
+	border:1px #F0F3F5 solid ;
+}
+.newCommend{
+	padding: .1rem 0 0 .1rem;
+}
+.newCommend .h2{
+	font-size:16px;
+}
+
+.accouter_goods{
+	padding:0.1rem 0;
+	height:1.3rem;
+}
+.commend_content{
+	width:100%;
+}
+.commend_content img{
+	height:100%;
+	float: left;
+}
+.commend_content .goods_right{
+	float: left;
+	height:100%;
+	margin-left:0.15rem;
+	width:1.7rem;
+}
+.commend_content .title{
+	height:0.35rem;
+	font-size:0.14rem;
+	word-break: break-all;
+}
+.commend_content .txt{
+	margin-top:0.15rem;
+	font-size:13px;
+    font-family: "宋体";
+}
+.commend_content .pirce{
+	margin-top:0.1rem;
+
+	height:0.2rem;
+	font-size:13px;
+}
+.commend_content .pirce .pirce_left{
+	color:#FF0000;
+}
+.commend_content .pirce .price_right{
+	float: right;
+	display: block;
+}
+.commend_content .pirce .price_right img{
+	margin-top:0.03rem;
+	height:0.08rem;
+}

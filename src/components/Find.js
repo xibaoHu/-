@@ -18,7 +18,7 @@ import { BackTop } from 'antd';
  	constructor(){
  		super();
 		this.onTrack = this.onTrack.bind(this);
-		this.moreload = this.moreload.bind(this);
+
  	}	
  	onTrack(e,arg){
  		   var arr =document.getElementsByClassName("Child");
@@ -40,14 +40,11 @@ import { BackTop } from 'antd';
 		this.scrollM = new BScroll(this.refs.find, {scrollY:true,click:true, pullUpLoad: {boolean:true,options:{threshold:0,noMoreTxt:"没有更多数据了"}}})
 		
 	}
-	moreload(){
-		console.log(this.props.find_all)
-	}
 	render() {
 		return (		
 			<Router>
 			<div className="find" ref="find">
-			 <div className = "find_content" onClick={this.moreload}>
+			 <div className = "find_content" >
 			 <Carousel autoplay >{
                this.props.find_banner.map((item,index) => {
                return <div key= { item._id }> <img src={item.logo} /></div>         

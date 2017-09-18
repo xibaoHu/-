@@ -2,7 +2,8 @@
 	height:100%;
 	width:100%;
 	background:#F7F7F7;
-	overflow: hidden;
+	overflow:hidden;
+	
 }
 a{
 	color:#000000;
@@ -137,7 +138,7 @@ a{
 	background:#FFFFFF;
 	padding:0.08rem;
     padding-left:0;
-	height:2.3rem;
+	height:2.5rem;
 	width:100%;
 }
 .bottom_content .asset .user_img{
