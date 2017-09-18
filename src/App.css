@@ -31,9 +31,6 @@
   font-size: 0.13rem;
 }
 
-#app .page-menu li a:active{
-  color: blue;
-}
 
 #app .page-menu li i{
   display: block;
@@ -52,5 +49,32 @@
 #app .di{
   width: 100%;
   height: 0.4rem;
+}
+
+
+
+#app .am-tab-bar-bar {
+	height: auto;
+	border: none;
+	border: 0;
+}
+
+#app .am-tab-bar-tab-icon a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#app .am-tab-bar-tab-title span a{
+	display: block;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	top: -20px;
+}
+
+#app .am-tab-bar-bar .am-tab-bar-tab-title {
+    font-size: 14px;
+    height: 20px;
 }
 

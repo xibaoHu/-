@@ -1,0 +1,24 @@
+{
+'status':'1',
+'name':'homepagelist',
+'data':[
+	{
+		'id':'201',
+		'type':'lr',
+		'imgurl':'http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDkvMTgxMi9jNmZlMzhmMWYxMWM0ZTJlYzViMmU0NGNkMzkxNWM3Mi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg',
+		'title':'Air Jordan 12',	
+		'content':'鲜艳的红色搭配白色，不对称的交织融合，活力氛围浓厚。',
+		'price':'¥799',
+		'browsed':'1977268'
+	},
+	{
+		'id':202,
+		'type':'lr',
+		'imgurl':'http://shihuoproxy.hupucdn.com/aHR0cDovL3NoaWh1by5odXB1Y2RuLmNvbS9nb29kcy8yMDE3MDkvMTgxMi83Mjk3ZjZlYTgzNDA1NzljNDhhMWIwZWZjYjlhNzE3Mi5qcGc?imageView2/0/w/600/h/600/interlace/1%7cimageMogr2/format/jpg',
+		'title':'Air Jordan 5',	
+		'content':'以狼灰色皮质鞋面搭配黑色鞋舌，中底的黑灰装扮加上泼墨点缀。',
+		'price':'4499',
+		'browsed':'2087371'
+	}
+]
+}

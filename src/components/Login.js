@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import '../css/login.css';
+import { message } from 'antd';
 
 class Login extends Component {
 	constructor(){
 		super();
-		this.state = { ok: '0', use: '', pwd: '', title: '' };
+		this.state = { 
+			ok: '0', 
+			use: '', 
+			pwd: '', 
+			title: '' 
+		};
 		this.userPwds = this.userPwds.bind(this);
 	}
 	componentDidMount(){
@@ -48,8 +54,15 @@ class Login extends Component {
 		    }).then((data)=>{
 		      	console.log(data);
 				if (data.result == '该用户已注册'){
-					alert('登录成功');
-					window.location.href = 'http://localhost:3000/more';
+					(() => { message.success('登陆成功') })();
+					if( localStorage.userState ){
+						localStorage.setItem( 'userState', '{ "state": "ok", "user":' + this.state.use + ' }');
+					}else {
+						localStorage.userState = '{ "state": "ok", "user":' + this.state.use + ' }';
+					}
+					setTimeout(function(){
+						window.location.href = 'http://localhost:3000/more';
+					},1000)
 				};
 			})
 		}
@@ -79,7 +92,7 @@ class Login extends Component {
 							</div>
 						 	<div className="form-item-btn ">
 								<a href="http://localhost:3000/register">注册</a>
-								<button className="login-btn" onClick={this.userPwds}>登录</button>
+								<button className="login-btn" onClick={ this.userPwds }>登录</button>
 							</div>
 						</div>
 					</div>

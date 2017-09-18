@@ -5,7 +5,10 @@ import { message, Button } from 'antd';
 class Register extends Component {
 	constructor(){
 		super();
-		this.state = { phone: '' };
+		this.state = {
+			ok: '0',
+			phone: '' 
+		};
 		this.resPhone = this.resPhone.bind(this);
 	}
 	componentDidMount(){
@@ -21,19 +24,34 @@ class Register extends Component {
 		const phoneReg = /^1[34578]\d{9}$/;
 		if ( phoneReg.test(phoneValue) ) {
 			this.setState({
+				ok: '1',
 	        	phone: phoneValue
 	        })
+		}else {
+			(() => { message.warning('请输入正确的手机号') })();
 		}
 	}
 	componentDidUpdate(){
 		console.log('update')
 		console.log(this.state)
-		fetch("/api/regist?username="+this.state.phone+"&psw=111111").then((res)=>{
-	      	return res.json();
-	    }).then((data)=>{
-	      	console.log(data);
-			alert(data.result);
-		})
+		if( this.state.ok == '1' ){
+			fetch("/api/regist?username="+this.state.phone+"&psw=111111").then((res)=>{
+		      	return res.json();
+		    }).then((data)=>{
+		      	console.log(data);
+//				alert(data.result);
+				( () => { 
+					if ( data.result == '该用户已注册' ) {
+						message.warning(data.result)
+					}else {
+						message.success(data.result);
+						setTimeout(function(){
+							window.location.href = 'http://localhost:3000/login';
+						},1000)
+					}
+				} )()
+			})
+		}		
 	}
 	render() {
 		return (
