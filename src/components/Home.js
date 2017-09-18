@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import '../homestyle.css'
 import Homesearch from './home/Homesearch'
 import Homecarousel from './home/Homecarousel'
-import PicBanner from './home/PicBanner'
+import PicBanner from './home/HomePicBanner'
+import HomeTab from './home/HomeTab'
 
 class Home extends Component {
 	constructor(){
@@ -15,6 +16,7 @@ class Home extends Component {
 				<Homesearch/>
 				<Homecarousel/>
 				<PicBanner/>
+				<HomeTab/>
 			</div>
 		)
 	}		    

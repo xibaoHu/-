@@ -1,5 +1,5 @@
 .home-page{
-	background-color:#e0e0e0;
+	background-color:#eeeeee;
 	font-size:0.16rem
 }
 .top_bar{
@@ -28,6 +28,10 @@
 }
 .top_bar a span{
 	font-size:.24rem;
+}
+.top_bar input{
+	width:2.4rem;
+	outline:medium;
 }
 .home-page .slick-list{
 	width:100%;
@@ -114,4 +118,22 @@
 	text-align: center;
 	margin-top:.02rem;
 }
+.hometab{
+	font-weight: 900;
+}
+.hometab .ant-tabs-nav .ant-tabs-tab{
+	width:.64rem;
+	margin-right:0;
+}
+.hometab .ant-tabs-nav-animated{
+	width:100%;
+}
 
+.hometab .ant-tabs-ink-bar-no-animated{
+	margin-left:.25rem;
+	width:0.14rem!important;
+	background-color:red;
+}
+.hometab .ant-tabs-nav .ant-tabs-tab-active{
+	color:red;
+}
