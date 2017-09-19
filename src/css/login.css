@@ -93,9 +93,9 @@
     border-bottom: 1px solid #e1e1e1;
     display: block;
     float: left;
-    line-height: 32px;
+    line-height: .32rem;
     outline: none;
-    font-size: 15px;
+    font-size: .15rem;
     color: black;
 }
 
@@ -108,33 +108,33 @@
 
 #app #J_loginForm .form-item-btn a {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: .2rem;
     color: #999;
     border: 1px solid #b7b7b7;
-    height: 32px;
+    height: .32rem;
     vertical-align: middle;
     background-color: #fff;
-    font-size: 16px;
-    width: 80px;
-    line-height: 32px;
-    border-radius: 16px;
+    font-size: .16rem;
+    width: .8rem;
+    line-height: .32rem;
+    border-radius: .16rem;
 }
 
 #app #J_loginForm .form-item-btn .login-btn {
    	background-color: #d8544c;
     color: white;
 	outline: none;
-	height: 32px;
-	font-size: 16px;
-	line-height: 32px;
+	height: .32rem;
+	font-size: .16rem;
+	line-height: .32rem;
 	border: 1px solid #b7b7b7;
-	width: 80px;
-	border-radius: 16px;
+	width: .8rem;
+	border-radius: .16rem;
 }
 
 #app .user-login .other-login {
 	width: 85%;
-	padding-top: 60px;
+	padding-top: .6rem;
 }
 
 #app .user-login .other-login a{

@@ -79,7 +79,7 @@
     height: 0.32rem;
     color: black;
     outline: none;
-    width: 90%;
+    width: 89%;
 }
 
 #app .user-register .content .bindTips {
@@ -123,7 +123,7 @@
 	font-size: .12rem;
     text-align: left;
     color: #666;
-    line-height: 18px;
+    line-height: .18rem;
 }
 
 #app .user-register .content .afterSuccess p:first-child {

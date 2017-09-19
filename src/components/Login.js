@@ -20,8 +20,8 @@ class Login extends Component {
 		document.getElementsByClassName('home')[0].style.display = 'block';
 	}
 	userPwds(){
-		console.log(this.refs.user.value)
-		console.log(this.refs.pwd.value)
+		//console.log(this.refs.user.value)
+		//console.log(this.refs.pwd.value)
 		var userValue = this.refs.user.value;
 		var pwdValue = this.refs.pwd.value;
 		
@@ -46,24 +46,26 @@ class Login extends Component {
 		}
 	}
 	componentDidUpdate(){
-		console.log('update')
-		console.log(this.state)
+		//console.log('update')
+		//console.log(this.state)
 		if ( this.state.ok == '1' ) {
-			fetch("/api/regist?username="+this.state.use+"&psw="+this.state.pwd).then((res)=>{
+			fetch("/api/login?username="+this.state.use+"&psw="+this.state.pwd).then((res)=>{
 		      	return res.json();
 		    }).then((data)=>{
-		      	console.log(data);
-				if (data.result == '该用户已注册'){
-					(() => { message.success('登陆成功') })();
+		      	//console.log(data);
+				if ( data.result === '登录成功' ){
+					(() => { message.success('登录成功') })();
 					if( localStorage.userState ){
 						localStorage.setItem( 'userState', '{ "state": "ok", "user":' + this.state.use + ' }');
 					}else {
 						localStorage.userState = '{ "state": "ok", "user":' + this.state.use + ' }';
 					}
 					setTimeout(function(){
-						window.location.href = 'http://localhost:3000/more';
+						window.location.href = 'http://10.9.158.117:3000/more';
 					},1000)
-				};
+				}else if( data.result === '未注册' ){
+					(() => { message.warning('该账号未注册') })();
+				}
 			})
 		}
 	}
@@ -91,7 +93,7 @@ class Login extends Component {
 								<em className="error-icon"></em>
 							</div>
 						 	<div className="form-item-btn ">
-								<a href="http://localhost:3000/register">注册</a>
+								<a href="http://10.9.158.117:3000/register">注册</a>
 								<button className="login-btn" onClick={ this.userPwds }>登录</button>
 							</div>
 						</div>
