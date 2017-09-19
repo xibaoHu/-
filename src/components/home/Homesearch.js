@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class Homesearch extends Component {
+	
 	render(){
 		return(
 			<div className="top_bar">

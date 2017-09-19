@@ -11,6 +11,7 @@ class Home extends Component {
 	constructor(){
 		super();
 	}
+	
 	render() {
 		return (
 			<div className="home-page">
@@ -21,7 +22,7 @@ class Home extends Component {
 				<HomeTotop/>
 			</div>
 		)
-	}		    
+	}
 }
 
 

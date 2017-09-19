@@ -29,13 +29,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E9%A6%96%E9%A1%B5.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%A6%96%E9%A1%B5.svg) center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E9%A6%96%E9%A1%B5_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%A6%96%E9%A1%B5_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'blackTab'}
@@ -54,13 +54,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E4%BC%98%E6%83%A0.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E4%BC%98%E6%83%A0.svg) center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/preferential"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E4%BC%98%E6%83%A0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E4%BC%98%E6%83%A0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'greenTab'}
@@ -80,13 +80,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E5%8F%91%E7%8E%B0.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E5%8F%91%E7%8E%B0.svg) center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/find"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E5%8F%91%E7%8E%B0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E5%8F%91%E7%8E%B0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'yellowTab'}
@@ -106,13 +106,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E9%9E%8B%E5%8C%85%E6%9C%8D%E9%A5%B0.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%9E%8B%E5%8C%85%E6%9C%8D%E9%A5%B0.svg) center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/accouter"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E9%9E%8B%E5%8C%85%E6%9C%8D%E9%A5%B0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%9E%8B%E5%8C%85%E6%9C%8D%E9%A5%B0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'pinkTab'}
@@ -132,13 +132,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E6%9B%B4%E5%A4%9A.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E6%9B%B4%E5%A4%9A.svg) center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/JS%20Three/React,js/react-study/shihuo/src/icon_svg/%E6%9B%B4%E5%A4%9A_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E6%9B%B4%E5%A4%9A_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/more"></Link></div>
           }
           selected={this.state.selectedTab === 'orangeTab'}
