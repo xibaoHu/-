@@ -22,3 +22,17 @@ renderPage();
 
 
 registerServiceWorker();
+
+screenchange()
+
+window.onresize=function(){
+  	screenchange()
+}
+	
+function screenchange(){
+	var html = document.getElementsByTagName("html")[0];
+	var clientWidth = html.offsetWidth ;
+	html.style["font-size"] =  (clientWidth/750)*100*2 +"px";
+}
+
+

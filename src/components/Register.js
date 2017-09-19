@@ -18,7 +18,7 @@ class Register extends Component {
 		document.getElementsByClassName('home')[0].style.display = 'block';
 	}
 	resPhone(){
-		console.log(this.refs.phoneInt.value)
+		//console.log(this.refs.phoneInt.value)
 		var phoneValue = this.refs.phoneInt.value;
 		
 		const phoneReg = /^1[34578]\d{9}$/;
@@ -32,13 +32,13 @@ class Register extends Component {
 		}
 	}
 	componentDidUpdate(){
-		console.log('update')
-		console.log(this.state)
+		//console.log('update')
+		//console.log(this.state)
 		if( this.state.ok === '1' ){
 			fetch("/api/regist?username="+this.state.phone+"&psw=111111").then((res)=>{
 		      	return res.json();
 		    }).then((data)=>{
-		      	console.log(data);
+		      	//console.log(data);
 //				alert(data.result);
 				( () => { 
 					if ( data.result === '该用户已注册' ) {
@@ -46,7 +46,7 @@ class Register extends Component {
 					}else {
 						message.success(data.result);
 						setTimeout(function(){
-							window.location.href = 'http://localhost:3000/login';
+							window.location.href = 'http://10.9.158.117:3000/login';
 						},1000)
 					}
 				} )()
