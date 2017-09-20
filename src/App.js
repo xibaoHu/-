@@ -22,7 +22,7 @@ const App = () => (
   	<div id='app'>
     	<Route path="/login" component={Login}/>
 	  	<Route path="/register" component={Register}/>
-      <div className='home'>
+     
 	      <Route exact path="/" component={Home}/>
 	      <Route path="/preferential" component={Preferential}/>
 	      <Route path="/find" component={Find}/>
@@ -31,7 +31,7 @@ const App = () => (
 	      <Route path="/detail/:id" component={Detail}/>
 	      
 	      <Tabbar/>
-    	</div>
+    	
     </div>
   </Router>
 )

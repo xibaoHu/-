@@ -12,10 +12,10 @@ class Register extends Component {
 		this.resPhone = this.resPhone.bind(this);
 	}
 	componentDidMount(){
-		document.getElementsByClassName('home')[0].style.display = 'none';
+		document.getElementsByClassName('am-tab-bar')[0].style.display = 'none';
 	}
 	componentWillUnmount(){
-		document.getElementsByClassName('home')[0].style.display = 'block';
+		document.getElementsByClassName('am-tab-bar')[0].style.display = 'block';
 	}
 	resPhone(){
 		//console.log(this.refs.phoneInt.value)

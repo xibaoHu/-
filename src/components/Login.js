@@ -14,10 +14,10 @@ class Login extends Component {
 		this.userPwds = this.userPwds.bind(this);
 	}
 	componentDidMount(){
-		document.getElementsByClassName('home')[0].style.display = 'none';
+		document.getElementsByClassName('am-tab-bar')[0].style.display = 'none';
 	}
 	componentWillUnmount(){
-		document.getElementsByClassName('home')[0].style.display = 'block';
+		document.getElementsByClassName('am-tab-bar')[0].style.display = 'block';
 	}
 	userPwds(){
 		//console.log(this.refs.user.value)
