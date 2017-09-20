@@ -6,6 +6,17 @@ import 'antd-mobile/lib/tab-bar/style/index.css';
 
 import { Link } from 'react-router-dom'
 
+import homeI from '../icon_svg/首页.svg';
+import homeI_red from '../icon_svg/首页_red.svg';
+import yhI from '../icon_svg/优惠.svg';
+import yhI_red from '../icon_svg/优惠_red.svg';
+import findI from '../icon_svg/发现.svg';
+import findI_red from '../icon_svg/发现_red.svg';
+import zbI from '../icon_svg/鞋包服饰.svg';
+import zbI_red from '../icon_svg/鞋包服饰_red.svg';
+import moreI from '../icon_svg/更多.svg';
+import moreI_red from '../icon_svg/更多_red.svg';
+
 class TabBarMenu extends React.Component {
   constructor(props) {
     super(props);
@@ -29,13 +40,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/E:/JS/JS%201710A/JS%20Three/React,js/react-study/shihuo/src/icon_svg/首页.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ homeI +') center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/E:/JS/JS%201710A/JS%20Three/React,js/react-study/shihuo/src/icon_svg/首页_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ homeI_red +') center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'blackTab'}
@@ -43,7 +54,7 @@ class TabBarMenu extends React.Component {
             this.setState({
               selectedTab: 'blackTab',
             });
-						console.log('logId0')
+						//console.log('logId0')
 					}}
           data-seed="logId0"
         >
@@ -54,13 +65,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E4%BC%98%E6%83%A0.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ yhI +') center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/preferential"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E4%BC%98%E6%83%A0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ yhI_red +') center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'greenTab'}
@@ -68,7 +79,7 @@ class TabBarMenu extends React.Component {
             this.setState({
               selectedTab: 'greenTab',
             });
-						console.log('logId1');
+						//console.log('logId1');
 						//window.location.href = 'http://localhost:3000/preferential';
 					}}
           data-seed="logId1"
@@ -80,13 +91,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E5%8F%91%E7%8E%B0.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ findI +') center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/find"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E5%8F%91%E7%8E%B0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ findI_red +') center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'yellowTab'}
@@ -94,7 +105,7 @@ class TabBarMenu extends React.Component {
             this.setState({
               selectedTab: 'yellowTab',
             });
-						console.log('logId2');
+						//console.log('logId2');
 						//window.location.href = 'http://localhost:3000/find';
 					}}
           data-seed="logId2"
@@ -106,13 +117,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%9E%8B%E5%8C%85%E6%9C%8D%E9%A5%B0.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ zbI +') center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/accouter"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%9E%8B%E5%8C%85%E6%9C%8D%E9%A5%B0_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ zbI_red +') center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'pinkTab'}
@@ -120,7 +131,7 @@ class TabBarMenu extends React.Component {
             this.setState({
               selectedTab: 'pinkTab',
             });
-						console.log('logId3');
+						//console.log('logId3');
 						//window.location.href = 'http://localhost:3000/accouter';
 					}}
           data-seed="logId3"
@@ -132,13 +143,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E6%9B%B4%E5%A4%9A.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ moreI +') center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E6%9B%B4%E5%A4%9A_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url('+ moreI_red +') center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/more"></Link></div>
           }
           selected={this.state.selectedTab === 'orangeTab'}
@@ -146,7 +157,7 @@ class TabBarMenu extends React.Component {
             this.setState({
               selectedTab: 'orangeTab',
             });
-						console.log('logId4');
+						//console.log('logId4');
 						//window.location.href = 'http://localhost:3000/more';
 					}}
           data-seed="logId4"

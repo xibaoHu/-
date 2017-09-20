@@ -9,7 +9,7 @@ class Homesearch extends Component {
 		};
 	}
 	componentDidMount(){
-		console.log(this.refs)
+		//console.log(this.refs)
 	}
 	render(){
 		return(
