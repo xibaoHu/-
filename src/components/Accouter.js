@@ -43,11 +43,11 @@ export default class Accouter extends Component {
       	console.log(error); 
       })
 		
-      window.addEventListener('scroll', this.handleScroll);
+      //window.addEventListener('scroll', this.handleScroll);
 }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    //window.removeEventListener('scroll', this.handleScroll);
   }
   handleScroll(e){
     console.log('浏览器滚动事件')
@@ -94,7 +94,7 @@ export default class Accouter extends Component {
 			         		         <div className="h2"><s>{item.topic1}</s>{item.topic2}</div>
 			         		          <p> {item.txt1}</p>
 			         		          <p> {item.txt2}</p>
-			         		         <div className="clearfix">
+			         		         <div className="accouter_clearfix">
 			         		            <div className="boxF">
 			         		               <div className="boxS">
 			         		                <img src={item.good1}/>

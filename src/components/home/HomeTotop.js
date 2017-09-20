@@ -12,11 +12,11 @@ class HomeTotop extends Component {
 		var that = this;
 		body.addEventListener("touchmove", function(e) {
 			//console.log( that.state.toTop );
-			if( this.scrollTop >= 50 ){
+			if( window.scrollY >= 50 ){
 				that.setState({
 					toTop: 'block'
 				})
-			}else if( this.scrollTop <= 50 ){
+			}else if( window.scrollY <= 50 ){
 				that.setState({
 					toTop: 'none'
 				})

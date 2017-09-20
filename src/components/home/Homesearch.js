@@ -12,8 +12,8 @@ class Homesearch extends Component {
 		var that = this;
 		body.addEventListener("touchmove", function(e) {
 			//console.log( that.state.toTop );
-			if( this.scrollTop <= 200 && this.scrollTop > 0 ){
-				that.setState.opciatySearch = this.scrollTop/200;
+			if( window.scrollY <= 200 && window.scrollY > 0 ){
+				that.setState.opciatySearch = window.scrollY/200;
 				that.setState({
 					opciatySearch: that.setState.opciatySearch
 				})
