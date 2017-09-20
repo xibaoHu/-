@@ -29,13 +29,13 @@ class TabBarMenu extends React.Component {
           icon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%A6%96%E9%A1%B5.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/E:/JS/JS%201710A/JS%20Three/React,js/react-study/shihuo/src/icon_svg/首页.svg) center center /  0.18rem 0.18rem no-repeat' }}
           ><Link to="/"></Link></div>
           }
           selectedIcon={<div style={{
             width: '0.19rem',
             height: '0.19rem',
-            background: 'url(http://127.0.0.1:8020/-/src/icon_svg/%E9%A6%96%E9%A1%B5_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
+            background: 'url(http://127.0.0.1:8020/E:/JS/JS%201710A/JS%20Three/React,js/react-study/shihuo/src/icon_svg/首页_red.svg) center center /  0.18rem 0.18rem no-repeat' }}
           />
           }
           selected={this.state.selectedTab === 'blackTab'}

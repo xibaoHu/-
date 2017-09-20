@@ -30,8 +30,6 @@ const App = () => (
 	      <Route path="/more" component={More}/>
 	      <Route path="/detail/:id" component={Detail}/>
 	      
-	      <hr/>
-	      
 	      <Tabbar/>
     	</div>
     </div>

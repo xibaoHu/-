@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Yhsearch from './yh/Yhsearch'
+import '../css/yh.css'
 
 class Preferential extends Component {
 	render() {
 		return (
-			<div>
-				<h2>Preferential</h2>
+			<div className='yh'>
+				<Yhsearch/>
 			</div>
 		)
 	}
