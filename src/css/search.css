@@ -1,0 +1,104 @@
+
+.search_ {
+	width: 100%;
+}
+
+.search_ .searchTop {
+	width: 100%;
+	height: .5rem;
+	background-color: #f7f7f7;
+	
+}
+
+.search_ .searchTop .searchTop_int {
+	width: 80%;
+	margin-left: 5%;
+	margin-top: 1.5%;
+	float: left;
+	border-radius: 0.05rem;
+	height: 80%;
+	background-color: #e8e8e8;
+}
+
+.search_ .searchTop .searchTop_int i {
+	font-size: .2rem;
+}
+
+.search_ .searchTop .searchTop_int .searchVal {
+	width: 80%;
+	height: 100%;
+	background-color: #e8e8e8;
+	outline: none;
+	height: 80%;
+	margin-top: 1.5%;
+	margin-left: 2%;
+}
+
+.search_ .searchTop a{
+	float: left;
+	width: 14%;
+	height: 100%;]
+	color: #666;
+	font-size: .16rem;
+	text-align: center;
+	line-height: .5rem;
+}
+
+.search_ #searchWrapper {
+	width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 81;
+    left: 0;
+    top: 1.2rem;
+}
+
+#searchWrapper dl{
+	background: #fff;
+    padding: .13rem;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#searchWrapper dl dt{
+	font-size: .17rem;
+    color: #999;
+    margin-bottom: .14rem;
+}
+
+#searchWrapper dl .sear_hot {
+    margin-bottom: .07rem;
+}
+
+#searchWrapper dl .sear_hot a {
+    font-size: .06rem;
+    display: inline-block;
+    margin-right: .03rem;
+    margin-bottom: .13rem;
+    border: 1px solid #aeaeae;
+    color: #444;
+    padding: .07rem;
+    border-radius: 3px;
+}
+
+#searchWrapper dl dt.his {
+    margin-bottom: 0;
+}
+
+#searchWrapper .clear_history {
+    margin: .13rem auto;
+    text-align: center;
+}
+
+#searchWrapper .clear_history a {
+    display: inline-block;
+    font-size: .19rem;
+    color: #dd1712;
+    border-radius: .02rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    border: 1px solid #ECECEC;
+    width: 2.7rem;
+    background: #fff;
+}

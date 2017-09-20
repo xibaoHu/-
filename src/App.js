@@ -11,6 +11,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Detail from './components/Detail';
 import Tabbar from './components/Tabbar'
+import Search from './components/Search'
 
 import {
   BrowserRouter as Router,
@@ -29,6 +30,7 @@ const App = () => (
 	      <Route path="/accouter" component={Accouter}/>
 	      <Route path="/more" component={More}/>
 	      <Route path="/detail/:id" component={Detail}/>
+	      <Route path="/search" component={Search}/>
 	      
 	      <Tabbar/>
     	
