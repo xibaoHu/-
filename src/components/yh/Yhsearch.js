@@ -7,9 +7,14 @@ class Homesearch extends Component {
 		this.state = { 
 			opciatySearch: 0
 		};
+		this.toSearch = this.toSearch.bind(this);
 	}
 	componentDidMount(){
 		//console.log(this.refs)
+	}
+	toSearch(){
+		console.log('toSearch');
+		window.location.href = 'http://10.9.158.117:3000/search'
 	}
 	render(){
 		return(
@@ -20,7 +25,7 @@ class Homesearch extends Component {
 				</div>
 				<div className="searchBox">
 					<i className="icon iconfont icon-sousuo"></i>
-					<input type="text" name="search" placeholder="搜索全网低价好券" className="searchVal" ref='yh_input'/>
+					<input type="text" onFocus={this.toSearch} name="search" placeholder="搜索全网低价好货" className="searchVal"/>
 				</div>
 				<div className="ico_list">
 					<img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_4a4f511.png" />

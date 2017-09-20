@@ -27,8 +27,8 @@ class TabBarMenu extends React.Component {
     };
   }
   componentDidMount() {
-  	console.log(window.location.pathname)
-  	if( window.location.pathname === '/preferential' ) {
+  	//console.log(window.location.pathname)
+  	if( window.location.pathname === '/preferential' || window.location.pathname === '/search' ) {
   		this.setState({
 				selectedTab: 'greenTab'
 			})
