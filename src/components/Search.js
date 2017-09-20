@@ -14,35 +14,45 @@ export default class Search extends React.Component {
 	componentDidMount(){
 	}
 	searchChange(){
-		this.state.intValue = this.refs.yh_input.value;
-		this.setState({
-			intValue: this.state.intValue
-		})
-		//console.log(this.state);
-		const innerReg1 = /^[\u4e00-\u9fa5]+$/;  //中文
-		const innerReg2 = /^[0-9a-zA-Z]+$/;  //数字字母
-		if( innerReg1.test( this.state.intValue ) || innerReg2.test( this.state.intValue ) ) {
+		//console.log(this.refs.yh_input.value)
+		if( this.refs.yh_input.value === '' ){
+			this.state.innerList = [];
 			this.setState({
-				innerC: 'none'
-			});
-			fetch("/api/search?SearchP="+this.state.intValue).then((res)=>{
-		      	return res.json();
-		    }).then((data)=>{
-		    	if( data.result === '无该商品' ){
-		    		this.state.innerList = ['暂无该关键字搜索内容'];
-			    	this.setState({
-						innerList: this.state.innerList,
-						innerC: 'block'
-					})
-		    	}else {
-		    		var sList = data[0].Product.replace('[','').replace(']','').split(',');
-			    	this.state.innerList = sList;
-			    	this.setState({
-						innerList: this.state.innerList
-					})
-			    	//console.log(this.state);
-		    	}
-		    })
+				innerList: this.state.innerList,
+				innerC: 'block'
+			})
+			//console.log(this.state)
+		}else {
+			this.state.intValue = this.refs.yh_input.value;
+			this.setState({
+				intValue: this.state.intValue
+			})
+		
+			const innerReg1 = /^[\u4e00-\u9fa5]+$/;  //中文
+			const innerReg2 = /^[0-9a-zA-Z]+$/;  //数字字母
+			if( innerReg1.test( this.state.intValue ) || innerReg2.test( this.state.intValue ) ) {
+				this.setState({
+					innerC: 'none'
+				});
+				fetch("/api/search?SearchP="+this.state.intValue).then((res)=>{
+			      	return res.json();
+			    }).then((data)=>{
+			    	if( data.result === '无该商品' ){
+			    		this.state.innerList = ['暂无该关键字搜索内容'];
+				    	this.setState({
+							innerList: this.state.innerList,
+							innerC: 'block'
+						})
+			    	}else {
+			    		var sList = data[0].Product.replace('[','').replace(']','').split(',');
+				    	this.state.innerList = sList;
+				    	this.setState({
+							innerList: this.state.innerList
+						})
+				    	//;
+			    	}
+			    })
+			}
 		}
 	}
 	render(){
