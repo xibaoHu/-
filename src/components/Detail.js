@@ -19,7 +19,7 @@ export default class Detail extends Component {
 	}
 	componentDidMount(){
 		var that = this;
-    var dei = document.querySelector(".page-menu")
+    var dei = document.querySelector(".am-tab-bar")
     dei.style.display = "none"
 		var url1 = '/api/detial?detial_id='+this.props.match.params.id;
 			axios.get(url1)

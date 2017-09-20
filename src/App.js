@@ -12,6 +12,7 @@ import Register from './components/Register';
 import Detail from './components/Detail';
 import Tabbar from './components/Tabbar'
 import Search from './components/Search'
+import Shopcar from './components/Shopcar'
 
 import {
   BrowserRouter as Router,
@@ -31,7 +32,7 @@ const App = () => (
 	      <Route path="/more" component={More}/>
 	      <Route path="/detail/:id" component={Detail}/>
 	      <Route path="/search" component={Search}/>
-	      
+	      <Route path="/shopcar" component={Shopcar}/>
 	      <Tabbar/>
     	
     </div>

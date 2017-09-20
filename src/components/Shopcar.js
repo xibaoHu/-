@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom'
-import "./Shopcar.scss"
+import "./Shopcar.css"
 import axios from "axios"
 import {Icon,Radio ,Checkbox } from 'antd';
 
@@ -27,7 +27,7 @@ export default class Shopcar extends React.Component {
         	}
         )
         this.setState({goodslist :arr,money:allmoney})
-        let dei = document.querySelector(".page-menu")
+        let dei = document.querySelector(".am-tab-bar")
         dei.style.display = "none" 
       
         }

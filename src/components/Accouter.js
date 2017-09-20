@@ -48,6 +48,8 @@ export default class Accouter extends Component {
 
   componentWillUnmount() {
     //window.removeEventListener('scroll', this.handleScroll);
+		this.scrollM = new BScroll(this.refs.acc, {scrollY:true,click:true,pullUpLoad:true})
+    
   }
   handleScroll(e){
     console.log('浏览器滚动事件')
