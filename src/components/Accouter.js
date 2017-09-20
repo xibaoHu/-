@@ -34,7 +34,7 @@ export default class Accouter extends Component {
 		
 		 	axios.get('/api/accouter_good'
       ).then(function(res){
-	        console.log(res)
+	        //console.log(res)
 	        that.setState({
 	        	goods: res.data	        	
 	        })
@@ -54,10 +54,8 @@ export default class Accouter extends Component {
   }
    componentDidUpdate(){
 		this.scrollM = new BScroll(this.refs.acc, {scrollY:true,click:true,pullUpLoad:true})
-		console.log(this.scrollM)
-			this.scroll.on('touchend', (pos) => {  if (pos.y > 50) {alert(1)} })
-		
-
+		//console.log(this.scrollM)
+		//this.scroll.on('touchend', (pos) => {  if (pos.y > 50) {alert(1)} })
 	}
 	render() {
 		return (

@@ -8,9 +8,9 @@ class Homesearch extends Component {
 		};
 	}
 	componentDidMount(){
-		var body = document.getElementsByTagName('body')[0];
+		var homePage = document.getElementsByClassName('home-page')[0];
 		var that = this;
-		body.addEventListener("touchmove", function(e) {
+		homePage.addEventListener("touchmove", function(e) {
 			if( window.scrollY <= 400 && window.scrollY > 0 ){
 				that.setState.opciatySearch = window.scrollY/400;
 				that.setState({

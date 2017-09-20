@@ -27,8 +27,8 @@ import { BackTop } from 'antd';
  		  	arr[i].style.color= "#000";
  		  	arr[i].style["border-bottom"] = "#F7F7F7 2px solid"
  		  }
- 		   ele.style.color= "#D61F23";
- 		   ele.style["border-bottom"] = "2px solid #D61F23"
+ 		  ele.style.color= "#D61F23";
+ 		  ele.style["border-bottom"] = "2px solid #D61F23"
  	}
 	componentDidMount() {
     	  this.props.fetchListData ();
@@ -163,7 +163,7 @@ const mapDispatchFind2Props = (dispatch)=>{
 	    	   fetch("/api/find_all").then((res)=>{
 	    		return res.json();
 	    	}).then((json)=>{
-	    		console.log(json)
+	    		//console.log(json)
 	    		dispatch({
 		 			type:"GET_FIND_ALL",
 		 			allload:json
