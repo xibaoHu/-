@@ -15,10 +15,11 @@ export default class Detail extends Component {
 	    this.state = {list:{detial_swiper:[1],detial_content:{smallimg:[],smallname:[]}}} 
 	    this.onClose = this.onClose.bind(this);
 	    this.onOpen = this.onOpen.bind(this);
+	    this.shopCar = this.shopCar.bind(this);
 	}
 	componentDidMount(){
 		var that = this;
-    var dei = document.querySelector(".am-tab-bar-bottom")
+    var dei = document.querySelector(".page-menu")
     dei.style.display = "none"
 		var url1 = '/api/detial?detial_id='+this.props.match.params.id;
 			axios.get(url1)
@@ -43,6 +44,47 @@ export default class Detail extends Component {
 		 win.style.display = "block";
 		 wrap.style.width = 3+"rem";
 	}
+	shopCar(){
+		 let wran = this.refs.Shoptran;
+		 wran.style.display="block";
+		 setTimeout(
+		 	()=>{
+		 		wran.style.display="none";
+		 	},1000)
+
+      let goodsId = this.props.match.params.id;
+      
+		  {/*判断商品是否存在购物车*/}		   
+		   	let goodsmessage = {
+        "goods_img":this.state.list.detial_swiper[0],
+        "goods_name":this.state.list.detial_name,
+        "goods_pirce":this.state.list.detial_pirce,
+        "goods_id":this.props.match.params.id,
+        "goods_num":1
+       }
+		   if(localStorage.getItem('goodlist'))
+		   {		  
+		   	let goodslist= JSON.parse(localStorage.getItem('goodlist'));
+		    let str = localStorage.getItem('goodlist');
+		   		goodslist.forEach((item,index)=>{
+		   			 if(item.goods_id == goodsId){
+		   			 	  item.goods_num ++;
+		   			 	 localStorage.goodlist = JSON.stringify(goodslist)
+		   			 	 return
+		   			 }
+		   	   }) 			 				
+		   		   if(str.indexOf('"goods_id":'+'"'+goodsId+'"')==-1){		   		   
+		   				 goodslist.push(goodsmessage)
+		   				 localStorage.goodlist = JSON.stringify(goodslist)
+		   			}
+		   }
+		   else{
+		   	  localStorage.goodlist =JSON.stringify([goodsmessage])
+		   }
+		
+		 
+		 
+	}
 	render() {
 		return (
 			<div className="detail">
@@ -55,7 +97,7 @@ export default class Detail extends Component {
 				     {/* 轮播插件*/}
 	                <Carousel autoplay >{
 	                   this.state.list.detial_swiper.map((item,index)=>{
-	                    return <div key={item}><img src={item } /></div>
+	                    return <div key={item + index}><img src={item+index } /></div>
 	                   })
 	                   }
 	                </Carousel>
@@ -91,23 +133,29 @@ export default class Detail extends Component {
 			    <div className="detail_window" ref="dwindow"></div>
 			    
 			       <div className="detial_wrap" ref="dwrap">
+			       
 			          <span className="close" onClick={this.onClose}>X</span>
 			              <Carousel autoplay >{
 	                   this.state.list.detial_swiper.map((item,index)=>{
-	                    return <div key={item}><img src={item } /></div>
+	                    return <div key={item+index }><img src={item } /></div>
 	                   })
 	                   }
 	                </Carousel>  
 	               <div className="h1">{this.state.list.detial_name}</div>
 	               <div className="h2">{this.state.list.detial_words}</div>
 			           <div className="wrap_bottom">
-			            <Link to="/shopcar">
+			            <div className="wrap_goShop" onClick={this.shopCar}>
 			             <button className="goShop">去购买</button>
-			            </Link>
+			            </div>
 			            <span className="wrap_pirce">
                     ￥{this.state.list.detial_pirce}.00
 			            </span>
 			           </div>
+			            {/* 加入购物车*/}
+			            <div className="Shoptran" ref="Shoptran">
+			               √成功加入购物车
+			            </div>
+			           
 			       </div>
 			    
               {/* 底部购买*/}
