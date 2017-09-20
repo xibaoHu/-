@@ -20,3 +20,17 @@ renderPage();
 
 
 registerServiceWorker();
+
+screenchange()
+
+window.onresize=function(){
+      screenchange()
+	}
+	
+function screenchange(){
+var html = document.getElementsByTagName("html")[0];
+var clientWidth= html.offsetWidth ;
+var clientHeight= html.offsetHeight ;
+html.style["font-size"] =  100*clientWidth*2/750 +"px";
+	
+}

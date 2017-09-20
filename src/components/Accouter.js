@@ -18,8 +18,9 @@ export default class Accouter extends Component {
 		
 	}
 	componentDidMount(){
-		var that = this;
-		 
+		  var that = this;
+		  var dei = document.querySelector(".page-menu");
+      dei.style.display = "block";
 			axios.get('/api/accouter_bigImage'
 			  )
 			  .then(function (res) {
@@ -42,11 +43,21 @@ export default class Accouter extends Component {
       	console.log(error); 
       })
 		
-	this.scrollM = new BScroll(this.refs.acc, {scrollY:true,click:true})
-	}
+      window.addEventListener('scroll', this.handleScroll);
+}
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  handleScroll(e){
+    console.log('浏览器滚动事件')
+  }
    componentDidUpdate(){
-		this.scrollM = new BScroll(this.refs.acc, {scrollY:true,click:true})
+		this.scrollM = new BScroll(this.refs.acc, {scrollY:true,click:true,pullUpLoad:true})
+		console.log(this.scrollM)
+			this.scroll.on('touchend', (pos) => {  if (pos.y > 50) {alert(1)} })
 		
+
 	}
 	render() {
 		return (
@@ -62,9 +73,9 @@ export default class Accouter extends Component {
 				 </div>
             {/* 导航*/}
 			     <div className="accouter_content1">
-			     <Link className="content1"  to="/" ><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-1_f79f337.png" style = {{ width:"0.43rem",margin :"0 0.2rem 0.065rem 0.4rem"}}/><span>热销排行</span></Link>
-			     <Link className="content1"  to="/" style={{borderLeft:"1px #5c5c5c solid",borderRight:"1px #5c5c5c solid"}}><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-2_4b3ef21.png"/><span>好价精选</span></Link>
-			     <Link className="content1"  to="/"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-3_680282c.png"/><span>当季新歌</span></Link>
+			     <Link className="content1"  to="/" ><div className="accouterNav"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-1_f79f337.png" style = {{ width:"0.43rem"}}/></div><span>热销排行</span></Link>
+			     <Link className="content1"  to="/" style={{borderLeft:"1px #5c5c5c solid",borderRight:"1px #5c5c5c solid"}}><div className="accouterNav"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-2_4b3ef21.png"/></div><span>好价精选</span></Link>
+			     <Link className="content1"  to="/"><div className="accouterNav"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/zhuangbei-index-menu-3_680282c.png"/></div><span>当季新歌</span></Link>
 			     </div>
 			{/*栏目种类*/}
 			      <div className="content_types">
@@ -137,7 +148,7 @@ export default class Accouter extends Component {
 			    		                  {item.good_detial}
 			    		                </div>
 			    		                <div className="pirce">
-			    		                 &gt 淘宝
+			    		                  淘宝
 			    		                 <span className="pirce_left">{item.good_pirce}</span>
 			    		                 <span className="price_right"><img src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/zhuangbei/index/icon-2_2bc8bc4.png"/>{item.good_commit}</span>
 			    		                </div>

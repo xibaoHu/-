@@ -8,11 +8,12 @@ import Find from './components/Find';
 import Accouter from './components/Accouter';
 import More from './components/More';
 import Detail from './components/Detail';
+import Shopper from './components/Shopcar'
 
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link  
 } from 'react-router-dom'
 
 
@@ -25,9 +26,9 @@ const App = () => (
 	      <Route path="/accouter" component={Accouter}/>
 	      <Route path="/more" component={More}/>
 	      <Route path="/detail/:id" component={Detail}/>
-
+        <Route path="/shopcar/:name" component={Shopper}/>
 	      
-	      <div className='page-menu'>
+	      <div className='page-menu' >
 		      <ul>
 		        <li><Link to="/">首页</Link></li>
 		        <li><Link to="/preferential">优惠</Link></li>

@@ -34,10 +34,12 @@ import { BackTop } from 'antd';
     	  this.props.fetchListData ();
     	  this.props.fetchHotblock ();  
     	  this.props.fetchAll();
+    	  var dei = document.querySelector(".page-menu")
+        dei.style.display = "block"
     	  this.scroll = new BScroll(this.refs.wrapper, {scrollY:false, scrollX:true,click:true})
 	}
 	componentDidUpdate(){
-		this.scrollM = new BScroll(this.refs.find, {scrollY:true,click:true, pullUpLoad: {boolean:true,options:{threshold:0,noMoreTxt:"没有更多数据了"}}})
+		this.scrollM = new BScroll(this.refs.find, {scrollY:true,click:true,bounce:false,pullUpLoad: {boolean:true,options:{threshold:0,noMoreTxt:"没有更多数据了"}}})
 		
 	}
 	render() {
@@ -46,7 +48,7 @@ import { BackTop } from 'antd';
 			<div className="find" ref="find">
 			 <div className = "find_content" >
 			 <Carousel autoplay >{
-               this.props.find_banner.map((item,index) => {
+               this.props.banner.map((item,index) => {
                return <div key= { item._id }> <img src={item.logo} /></div>         
                })
                }
@@ -123,7 +125,7 @@ import { BackTop } from 'antd';
 
 const mapStateFind2Props = (state) => {
 	return {
-		    find_banner : state.find_banner,
+		    banner : state.find_banner,
 		    find_hotblock : state.find_hotblock,
 		    find_all : state.find_all
 	      }
