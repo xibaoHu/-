@@ -102,3 +102,28 @@
     width: 2.7rem;
     background: #fff;
 }
+
+.search_ .innerList {
+	width: 100%;
+}
+
+.search_ .innerList ul{
+	width: 100%;
+}
+
+.search_ .innerList ul li{
+	width: 90%;
+	padding-left: 5%;
+	height: 0.5rem;
+    line-height: .5rem;
+    padding-left: .13rem;
+}
+
+.search_ .innerList ul li a{
+	display: block;
+    color: #444;
+    font-size: .2rem;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+    height: 100%;
+}

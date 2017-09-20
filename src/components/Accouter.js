@@ -13,9 +13,9 @@ import BScroll from 'better-scroll';
 
 export default class Accouter extends Component {
 	constructor(){
-		 super();
-		 this.state = {types:[],goods:[]} 
-		
+		super();
+		this.state = {types:[],goods:[]} 
+		this.toSearch = this.toSearch.bind(this);
 	}
 	componentDidMount(){
 		  var that = this;
@@ -57,6 +57,10 @@ export default class Accouter extends Component {
 		//console.log(this.scrollM)
 		//this.scroll.on('touchend', (pos) => {  if (pos.y > 50) {alert(1)} })
 	}
+  toSearch(){
+		//console.log('toSearch');
+		window.location.href = 'http://10.9.158.117:3000/search'
+	}
 	render() {
 		return (
 			<Router>
@@ -66,7 +70,7 @@ export default class Accouter extends Component {
                 <div className="accouter_swiper">
 				 <div className="accouter_search">
 				  <Icon type="search" className="search"/>
-				  <input type="search" placeholder="搜索最好的运动装备" / >
+				  <input type="search" placeholder="搜索最好的运动装备" onFocus={this.toSearch}/ >
 				  <Icon type="ellipsis" className="ellipsis"/>
 				 </div>
             {/* 导航*/}
