@@ -27,7 +27,7 @@ class HomeTotop extends Component {
 	render(){
 		return(
 			<a className="totop" href="javascript:scroll(0,0)" style={{display:this.state.toTop}}>
-				<img src="//sh1.hoopchina.com.cn/images/trademobile/daigou/top.png"/>	
+				<img src="//sh1.hoopchina.com.cn/images/trademobile/daigou/top.png" alt=""/>	
 			</a>
 		)
   }

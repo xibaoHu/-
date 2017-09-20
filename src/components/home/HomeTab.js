@@ -33,8 +33,8 @@ class HomeTab extends Component {
 			    <TabPane tab="推荐" key="1">
 			    	<ul className="homelist">
 			    	{
-			    		this.state.datalist != ''?this.state.datalist.map(function(item,index){
-					    		if(item.type=='lr'){
+			    		this.state.datalist !== ''?this.state.datalist.map(function(item,index){
+					    		if(item.type==='lr'){
 					    			return <li key={item.title+index}>
 					    					<div className="list-l">
 					    						<img src={item.imgurl}/>
@@ -53,8 +53,8 @@ class HomeTab extends Component {
 			    <TabPane tab="篮球" key="2">
 			    <ul className="homelist">
 			    	{
-			    		this.state.datalist != ''?this.state.datalist.map(function(item,index){
-					    		if(item.type=='lr'){
+			    		this.state.datalist !== ''?this.state.datalist.map(function(item,index){
+					    		if(item.type==='lr'){
 					    			return <li key={item.title+index}>
 					    					<div className="list-l">
 					    						<img src={item.imgurl}/>
@@ -73,8 +73,8 @@ class HomeTab extends Component {
 			    <TabPane tab="跑步" key="3">
 			    <ul className="homelist">
 			    {
-			    		this.state.datalist != ''?this.state.datalist.map(function(item,index){
-					    		if(item.type=='lr'){
+			    		this.state.datalist !== ''?this.state.datalist.map(function(item,index){
+					    		if(item.type==='lr'){
 					    			return <li key={item.title+index}>
 					    					<div className="list-l">
 					    						<img src={item.imgurl}/>
@@ -91,8 +91,8 @@ class HomeTab extends Component {
 			    <TabPane tab="健身" key="4">
 			    <ul className="homelist">
 			    {
-			    		this.state.datalist != ''?this.state.datalist.map(function(item,index){
-					    		if(item.type=='lr'){
+			    		this.state.datalist !== ''?this.state.datalist.map(function(item,index){
+					    		if(item.type==='lr'){
 					    			return <li key={item.title+index}>
 					    					<div className="list-l">
 					    						<img src={item.imgurl}/>
@@ -109,8 +109,8 @@ class HomeTab extends Component {
 			    <TabPane tab="潮流" key="5">
 			    <ul className="homelist">
 			    {
-			    		this.state.datalist != ''?this.state.datalist.map(function(item,index){
-					    		if(item.type=='lr'){
+			    		this.state.datalist !== ''?this.state.datalist.map(function(item,index){
+					    		if(item.type==='lr'){
 					    			return <li key={item.title+index}>
 					    					<div className="list-l">
 					    						<img src={item.imgurl}/>

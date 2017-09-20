@@ -4,6 +4,7 @@ import '../css/yh.css'
 import Yhcarousel from './yh/Yhcarousel'
 import Littlebanner from './yh/Littlebanner'
 import Yhtab from './yh/YhTab'
+
 class Preferential extends Component {
 	render() {
 		return (
