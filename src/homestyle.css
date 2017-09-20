@@ -5,16 +5,16 @@
 .top_bar{
 	width:100%;
 	z-index:1;
-	height:.4rem;
-	padding:.08rem .08rem .06rem;
+	height:.47rem;
+	padding:.09rem .09rem .09rem;
 	position: fixed;
 	top:0;
 	background-color: rgba(221,23,18,0);
 }
 .top_bar .search{
 	float:left;
-	width:2.62rem;
-	height:.26rem;
+	width:3.07rem;
+	height:.3rem;
 	background-color:#fff;
 	font-size:.12rem;
 	border-radius:2px
@@ -23,49 +23,49 @@
 	color:white;
 	float:right;
 	font-size:.12rem;
-	margin-top:-.06rem;
-	margin-right:.05rem;
+	margin-top:-.07rem;
+	margin-right:.06rem;
 }
 .top_bar a span{
-	font-size:.24rem;
+	font-size:.281rem;
 }
 .top_bar input{
-	width:2.4rem;
+	width:2.81rem;
 	outline:medium;
 }
 .home-page .slick-list{
 	width:100%;
-	height:1.62rem;
+	height:1.9rem;
 }
 .home-page .slick-list img{
 	width:100%;
-	height:1.62rem;
+	height:1.9rem;
 }
 .home-page .ant-carousel .slick-dots{
 	
 }
 .home-page .ant-carousel .slick-dots li button{
-	width:.06rem;
-	height:.06rem;
+	width:.07rem;
+	height:.07rem;
 	border-radius: 50%;
 } 
 .home-page .ant-carousel .slick-dots{
 	text-align:right;
-	padding-right: .05rem;
+	padding-right: .06rem;
 } 
 .picbanner{
 	background: #fff;
-    margin-top: 0.06rem;
+    margin-top: 0.07rem;
 }
 .picbanner img{
-	width:.45rem;
-	height:.45rem;
+	width:.53rem;
+	height:.53rem;
 }
 .picbanner li{
-	width:1.595rem;
-	height:.55rem;
+	width:1.87rem;
+	height:.65rem;
 	border-bottom: 1px solid #e0e0e0;
-	padding:0.08rem;
+	padding:0.09rem;
 }
 .picbanner li:nth-child(odd){
 	float:left;
@@ -91,43 +91,43 @@
 .hot{
 	display:flex;
 	justify-content: space-around;
-	padding-top:.04rem;
+	padding-top:.05rem;
 	padding-bottom:.03rem;
 }
 .hot li{
 	float:left;
-	width:1rem;
-	height:1.09rem;
+	width:1.17rem;
+	height:1.27rem;
 	background:#fff;
 }
 
 .hot li img{
-	width:.51rem;
-	height:.51rem;
+	width:.6rem;
+	height:.6rem;
 	margin:0 auto;
 	display: block;
-	margin-top:.05rem;
+	margin-top:.06rem;
 }
 .hot li h2{
 	font-size:.1rem;
 	text-align: center;
-	margin-top:.03rem
+	margin-top:.04rem
 }
 .hot li .desc{
-	font-size:.08rem;
+	font-size:.1rem;
 	text-align: center;
 	margin-top:.02rem;
 }
 .pic-board img{
 	width:100%;
-	height:.64rem;
+	height:.75rem;
 }
 .hometab{
 	font-weight: 900;
 	background-color:#fff;
 }
 .hometab .ant-tabs-nav .ant-tabs-tab{
-	width:.64rem;
+	width:.75rem;
 	margin-right:0;
 }
 .hometab .ant-tabs-nav-animated{
@@ -135,8 +135,8 @@
 }
 
 .hometab .ant-tabs-ink-bar-no-animated{
-	margin-left:.25rem;
-	width:0.14rem!important;
+	margin-left:.3rem;
+	width:0.16rem!important;
 	background-color:red;
 }
 .hometab .ant-tabs-nav .ant-tabs-tab-active{
@@ -152,16 +152,16 @@
 	background-color: #f5f5f5;
 	font-size:.12rem;
 	text-align: center;
-	height:.23rem;
-	line-height: .23rem;
+	height:.27rem;
+	line-height: .27rem;
 	
 }
 .home-page .totop{
-	width:.32rem;
-	height:.32rem;
+	width:.38rem;
+	height:.38rem;
 	position:fixed;
-	bottom:.64rem;
-	right:.04rem;
+	bottom:.75rem;
+	right:.05rem;
 }
 .home-page .totop img{
 	width:100%;
@@ -171,25 +171,25 @@
 	font-size: .12rem;;
 }
 .homelist img{
-	width:.9rem;
-	height:.9rem;
+	width:1.05rem;
+	height:1.05rem;
 }
 .homelist li{
-	width:3.11rem;
+	width:3.55rem;
 	margin:0 auto;
-	height:1.13rem;
+	height:1.32rem;
 }
 .homelist .list-l{
 	float:left;
-	width:.9rem;
-	height:.9rem
+	width:1.05rem;
+	height:1.05rem;
 }
 .homelist .list-r{
 	float:right;
-	width:200px;
-	height:.9rem;
-	margin-left:.05rem
+	width:2.34rem;
+	height:1.05rem;
+	margin-left:.06rem
 }
 .homelist .lr-title{
-	font-size:.18rem
+	font-size:.2rem
 }
