@@ -41,9 +41,6 @@
 	width:100%;
 	height:1.9rem;
 }
-.home-page .ant-carousel .slick-dots{
-	
-}
 .home-page .ant-carousel .slick-dots li button{
 	width:.07rem;
 	height:.07rem;
@@ -92,7 +89,7 @@
 	display:flex;
 	justify-content: space-around;
 	padding-top:.05rem;
-	padding-bottom:.03rem;
+	padding-bottom:.05rem;
 }
 .hot li{
 	float:left;
@@ -106,17 +103,17 @@
 	height:.6rem;
 	margin:0 auto;
 	display: block;
-	margin-top:.06rem;
+	margin-top:.07rem;
 }
 .hot li h2{
 	font-size:.1rem;
 	text-align: center;
-	margin-top:.04rem
+	margin-top:.05rem
 }
 .hot li .desc{
 	font-size:.1rem;
 	text-align: center;
-	margin-top:.02rem;
+	margin-top:.03rem;
 }
 .pic-board img{
 	width:100%;
