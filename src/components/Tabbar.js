@@ -26,6 +26,26 @@ class TabBarMenu extends React.Component {
       hidden: false
     };
   }
+  componentDidMount() {
+  	console.log(window.location.pathname)
+  	if( window.location.pathname === '/preferential' ) {
+  		this.setState({
+				selectedTab: 'greenTab'
+			})
+  	}else if( window.location.pathname === '/find' ) {
+  		this.setState({
+				selectedTab: 'yellowTab'
+			})
+  	}else if( window.location.pathname === '/accouter' ) {
+  		this.setState({
+				selectedTab: 'pinkTab'
+			})
+  	}else if( window.location.pathname === '/more' ) {
+  		this.setState({
+				selectedTab: 'orangeTab'
+			})
+  	}
+  }
   render() {
     return (
       <TabBar

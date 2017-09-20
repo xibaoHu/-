@@ -5,28 +5,6 @@ import { Carousel } from 'antd'
 const TabPane = Tabs.TabPane;
 
 class YhTab extends Component {
-	constructor(){
-		super();
-		this.state={
-			datadivst:''
-		}
-	}
-	componentWillMount(){
-		fetch('api/homedivstone')
-		.then((res)=>{
-				return res.json()
-			}
-		).then(
-		(ress)=>{
-			this.state.datadivst = ress[0].data;
-			this.setState({
-				datadivst:this.state.datadivst
-			})
-		}
-	).catch(function(e) {
-		  console.log(e);
-		})
-	}
 	render(){
 		return(
 			<div className="yhtab" >	

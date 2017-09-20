@@ -8,9 +8,9 @@ class HomeTotop extends Component {
 		};
 	}
 	componentDidMount(){
-		var body = document.getElementsByTagName('body')[0];
+		var homePage = document.getElementsByClassName('home-page')[0];
 		var that = this;
-		body.addEventListener("touchmove", function(e) {
+		homePage.addEventListener("touchmove", function(e) {
 			if( window.scrollY >= 50 ){
 				that.setState({
 					toTop: 'block'
