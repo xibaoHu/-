@@ -20,7 +20,7 @@ class Homesearch extends Component {
 		return(
 			<div className="yh_top_bar">
 				<div className="goback">
-					<img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_b142dc1.png" />
+					<img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_b142dc1.png" alt="" />
 					<a href="javascript:history.back();"></a>
 				</div>
 				<div className="searchBox">
@@ -28,7 +28,7 @@ class Homesearch extends Component {
 					<input type="text" onFocus={this.toSearch} name="search" placeholder="搜索全网低价好货" className="searchVal"/>
 				</div>
 				<div className="ico_list">
-					<img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_4a4f511.png" />
+					<img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_4a4f511.png" alt=""/>
 				</div>
 			</div>
 		)
