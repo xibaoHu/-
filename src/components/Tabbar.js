@@ -40,7 +40,7 @@ class TabBarMenu extends React.Component {
   		this.setState({
 				selectedTab: 'pinkTab'
 			})
-  	}else if( window.location.pathname === '/more' ) {
+  	}else if( window.location.pathname === '/more' || window.location.pathname === '/shopcar' ) {
   		this.setState({
 				selectedTab: 'orangeTab'
 			})

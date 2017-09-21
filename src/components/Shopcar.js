@@ -82,7 +82,7 @@ export default class Shopcar extends React.Component {
 		return (
 			<div className="Shopcar">
 			 <div className="detail_header">
-				  <div className="Navleft"><Link to="/accouter"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_b142dc1.png" /></Link></div>
+				  <div className="Navleft"><a href="javascript:history.back();"><img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_back_b142dc1.png" /></a></div>
 				  <span className="detial_topic"> 购物车 </span>
                    <div className="Navright"><Link to="/more"> <img src="//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/common/widget/header/head_list_4a4f511.png" /></Link></div>
 			 </div>
