@@ -85,7 +85,7 @@ class More extends Component {
 						</div>
 						<ul>
 							<li>
-								<a href="http://localhost:3000/shopcar">
+								<a href="http:127.0.0.1//:3000/shopcar">
 									<img src="http://sh1.hoopchina.com.cn/images/trade/app/personal/cart.png" alt="" />
 									<p>购物车</p>
 								</a>

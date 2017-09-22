@@ -61,7 +61,7 @@ class Login extends Component {
 						localStorage.userState = '{ "state": "ok", "user":' + this.state.use + ' }';
 					}
 					setTimeout(function(){
-						window.location.href = 'http://10.9.158.117:3000/more';
+						window.location.href = 'http://127.0.0.1:3000/more';
 					},1000)
 				}else if( data.result === '未注册' ){
 					(() => { message.warning('该账号未注册') })();
@@ -93,7 +93,7 @@ class Login extends Component {
 								<em className="error-icon"></em>
 							</div>
 						 	<div className="form-item-btn ">
-								<a href="http://10.9.158.117:3000/register">注册</a>
+								<a href="http://127.0.0.1:3000/register">注册</a>
 								<button className="login-btn" onClick={ this.userPwds }>登录</button>
 							</div>
 						</div>
