@@ -46,7 +46,7 @@ class Register extends Component {
 					}else {
 						message.success(data.result);
 						setTimeout(function(){
-							window.location.href = 'http://127.0.0.1:3000/login';
+							window.location.href = 'http://127.0.0.1/login';
 						},1000)
 					}
 				} )()

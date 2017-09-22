@@ -101,7 +101,7 @@ export default class Detail extends Component {
 		})
 		
 		if( this.state.goShop === '查看购物车' ){
-			window.location.href = 'http://127.0.0.1:3000/shopcar'
+			window.location.href = 'http://127.0.0.1/shopcar'
 		}
 	}
 	render() {

@@ -11,7 +11,7 @@ class HomeTab extends Component {
 		}
 	}
 	componentWillMount(){
-		fetch('api/homelistone')
+		fetch(':8020/api/homelistone')
 		.then((res)=>{
 				return res.json()
 			}
