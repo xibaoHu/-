@@ -61,7 +61,7 @@ export default class Accouter extends Component {
 	}
   toSearch(){
 		//console.log('toSearch');
-		window.location.href = 'http://10.9.158.117:3000/search'
+		window.location.href = 'http://127.0.0.1:3000/search'
 	}
 	render() {
 		return (
